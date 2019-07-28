@@ -12,4 +12,11 @@ export class ListResepMinumanComponent implements OnInit {
   ngOnInit() {
   }
 
+  getDaftarResep() {
+
+  }
+
+  onClickResepMakanan(index: number) {
+
+  }
 }
