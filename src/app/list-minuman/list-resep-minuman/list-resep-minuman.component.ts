@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataLoadersService } from 'src/app/services/data-loaders.service';
 
 @Component({
   selector: 'app-list-resep-minuman',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListResepMinumanComponent implements OnInit {
 
-  constructor() { }
+  listDaftarResep: string[] = [];
+
+  constructor(private readonly https: DataLoadersService) { }
 
   ngOnInit() {
   }
