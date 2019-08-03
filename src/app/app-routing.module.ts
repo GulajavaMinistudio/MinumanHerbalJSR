@@ -8,6 +8,10 @@ const routes: Routes = [
     loadChildren: () => import('./list-minuman/list-minuman.module').then(module => module.ListMinumanModule)
   },
   {
+    path: 'detail-resep',
+    loadChildren: () => import('./detail-minuman/detail-minuman.module').then(module => module.DetailMinumanModule)
+  },
+  {
     path: '',
     redirectTo: '/daftar-resep',
     pathMatch: 'full'
