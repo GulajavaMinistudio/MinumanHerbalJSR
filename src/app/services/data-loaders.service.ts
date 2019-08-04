@@ -33,6 +33,22 @@ export class DataLoadersService {
     return requestObservable;
   }
 
+  /**
+   * @description Ambil data detail berdasarkan pilihan resep minuman
+   * @param urlreqs String Url request permintaan data detail
+   */
+  getDetailResepMinuman(urlreqs: string): Observable<any> {
+
+    const requestObservable = this.http.get(urlreqs).pipe(
+      map((data: any) => {
+        return JSON.stringify(data);
+      }),
+      catchError(this.handleErrors)
+    );
+
+    return requestObservable;
+  }
+
 
   /**
    * @description Error yang muncul akan di tampilkan
