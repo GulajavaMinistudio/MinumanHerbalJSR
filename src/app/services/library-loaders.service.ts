@@ -19,7 +19,8 @@ export class LibraryLoadersService {
     return forkJoin([
 
       // untuk produksi
-      this.loadStyle('bulma-css.css')
+      this.loadStyle('bulma-css.css'),
+      this.loadStyle('bulma-divider-css.css')
       // untuk development contohnya
       // this.loadScript('bootstrap-style.js'),
       // this.loadScript('fontawesome-style.js'),

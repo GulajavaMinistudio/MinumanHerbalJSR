@@ -3,7 +3,7 @@
 }
 
 
-.message.is-primary .message-body {
+.message.is-info .message-body {
   background: #f2f2f2
 }
 
@@ -32,4 +32,9 @@
 
 footer {
   margin-top: 2rem;
+}
+
+.is-divider {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }

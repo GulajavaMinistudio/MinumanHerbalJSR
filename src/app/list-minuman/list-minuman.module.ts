@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ListMinumanRoutingModule } from './list-minuman-routing.module';
 import { ListResepMinumanComponent } from './list-resep-minuman/list-resep-minuman.component';
+import { DataLoadersService } from '../services/data-loaders.service';
 
 
 @NgModule({
@@ -10,6 +11,7 @@ import { ListResepMinumanComponent } from './list-resep-minuman/list-resep-minum
   imports: [
     CommonModule,
     ListMinumanRoutingModule
-  ]
+  ],
+  providers: [DataLoadersService]
 })
 export class ListMinumanModule { }

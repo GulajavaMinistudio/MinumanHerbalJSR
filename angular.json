@@ -31,16 +31,24 @@
                 "bundleName": "bulma-css",
                 "inject": true,
                 "lazy": true
+              },
+              {
+                "input": "node_modules/bulma-extensions/bulma-divider/dist/css/bulma-divider.min.css",
+                "bundleName": "bulma-divider-css",
+                "inject": true,
+                "lazy": true
               }
             ],
             "scripts": []
           },
           "configurations": {
             "production": {
-              "fileReplacements": [{
-                "replace": "src/environments/environment.ts",
-                "with": "src/environments/environment.prod.ts"
-              }],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -50,11 +58,13 @@
               "extractLicenses": true,
               "vendorChunk": true,
               "buildOptimizer": true,
-              "budgets": [{
-                "type": "initial",
-                "maximumWarning": "2mb",
-                "maximumError": "5mb"
-              }]
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
             }
           }
         },
