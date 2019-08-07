@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataLoadersService } from 'src/app/services/data-loaders.service';
 
 @Component({
   selector: 'app-resep-autoimun',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResepAutoimunComponent implements OnInit {
 
-  constructor() { }
+  responseData: any = {};
+
+  constructor(private readonly dataLoader: DataLoadersService) { }
 
   ngOnInit() {
+  }
+
+  getDataResep() {
+
+  }
+
+  setDataResep() {
+
   }
 
 }
