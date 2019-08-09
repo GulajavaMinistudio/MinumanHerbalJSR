@@ -11,6 +11,8 @@ import { Subscription } from 'rxjs';
 export class ResepAutoimunComponent implements OnInit {
 
   responseData: any = {};
+  detailResepSereh: any = {};
+  detailResepJahe: any = {};
   subscription: Subscription = new Subscription();
 
   constructor(private readonly dataLoader: DataLoadersService) { }
@@ -34,5 +36,8 @@ export class ResepAutoimunComponent implements OnInit {
 
   setDataResep() {
 
+    const arrayResep = this.responseData.array;
+    this.detailResepSereh = arrayResep[0];
+    this.detailResepJahe = arrayResep[1];
   }
 }
