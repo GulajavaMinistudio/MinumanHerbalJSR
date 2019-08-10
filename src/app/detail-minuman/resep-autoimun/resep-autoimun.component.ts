@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DataLoadersService } from 'src/app/services/data-loaders.service';
 import { URL_DETAIL_AUTOIMUN } from 'src/app/services/Konstans';
 import { Subscription } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-resep-autoimun',
@@ -19,11 +20,17 @@ export class ResepAutoimunComponent implements OnInit {
 
   ngOnInit() {
     this.subscription = new Subscription();
+    this.getDataResep();
   }
 
   getDataResep() {
 
     const subs = this.dataLoader.getDetailResepMinuman(URL_DETAIL_AUTOIMUN)
+      .pipe(
+        map((response) => {
+          return JSON.parse(response);
+        })
+      )
       .subscribe((result) => {
         this.responseData = result;
         this.setDataResep();
