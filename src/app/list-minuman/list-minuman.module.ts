@@ -12,6 +12,8 @@ import { DataLoadersService } from '../services/data-loaders.service';
     CommonModule,
     ListMinumanRoutingModule
   ],
-  providers: [DataLoadersService]
+  providers: [
+    DataLoadersService
+  ]
 })
 export class ListMinumanModule { }
