@@ -2,15 +2,14 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DataLoadersService } from 'src/app/services/data-loaders.service';
 import { Subscription } from 'rxjs';
 import { ResepModel } from 'src/app/models/ResepModel';
-import { Router} from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-resep-minuman',
   templateUrl: './list-resep-minuman.component.html',
-  styleUrls: ['./list-resep-minuman.component.css']
+  styleUrls: ['./list-resep-minuman.component.scss']
 })
 export class ListResepMinumanComponent implements OnInit, OnDestroy {
-
 
   listDaftarResep: string[] = [];
   subscribption: Subscription = new Subscription();
@@ -24,6 +23,7 @@ export class ListResepMinumanComponent implements OnInit, OnDestroy {
     this.subscribption = new Subscription();
     this.getDaftarResep();
   }
+
 
   getDaftarResep() {
 
@@ -46,10 +46,80 @@ export class ListResepMinumanComponent implements OnInit, OnDestroy {
 
       case 0:
 
-        this.router.navigate(['/detail-resep/resep-auto-imun', {nama: item}], {replaceUrl: true});
         break;
 
       case 1:
+
+        break;
+
+      case 2:
+
+        break;
+
+      case 3:
+
+        break;
+      case 4:
+
+        break;
+      case 5:
+
+        break;
+      case 6:
+
+        break;
+      case 7:
+
+        break;
+      case 8:
+
+        break;
+      case 9:
+
+        break;
+      case 10:
+
+        break;
+      case 11:
+
+        break;
+      case 12:
+
+        break;
+      case 13:
+
+        break;
+      case 14:
+
+        break;
+      case 15:
+
+        break;
+      case 16:
+
+        break;
+      case 17:
+
+        break;
+      case 18:
+
+        break;
+      case 19:
+
+        break;
+      case 20:
+
+        // RESEP UNTUK KEKEBALAN TUBUH
+        this.router.navigate(['/detail-resep/resep-auto-imun', { nama: item }],
+          { replaceUrl: false });
+        break;
+      case 21:
+
+        break;
+      case 22:
+
+        break;
+      case 23:
 
         break;
     }

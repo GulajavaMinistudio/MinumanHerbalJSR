@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DetailMinumanRoutingModule } from './detail-minuman-routing.module';
-import { DetailMinumanHomeComponent } from './detail-minuman-home/detail-minuman-home.component';
 import { ResepAutoimunComponent } from './resep-autoimun/resep-autoimun.component';
+import { DetailMinumanHomeComponent } from './detail-minuman-home/detail-minuman-home.component';
 
 
 @NgModule({
-  declarations: [DetailMinumanHomeComponent, ResepAutoimunComponent],
+  declarations: [ResepAutoimunComponent, DetailMinumanHomeComponent],
   imports: [
     CommonModule,
     DetailMinumanRoutingModule

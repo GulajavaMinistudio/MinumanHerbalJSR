@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { DataLoadersService } from 'src/app/services/data-loaders.service';
 import { URL_DETAIL_AUTOIMUN } from 'src/app/services/Konstans';
 import { Subscription } from 'rxjs';
@@ -7,9 +7,9 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-resep-autoimun',
   templateUrl: './resep-autoimun.component.html',
-  styleUrls: ['./resep-autoimun.component.css']
+  styleUrls: ['./resep-autoimun.component.scss']
 })
-export class ResepAutoimunComponent implements OnInit {
+export class ResepAutoimunComponent implements OnInit, OnDestroy {
 
   responseData: any = {};
   detailResepSereh: any = {};
@@ -39,6 +39,8 @@ export class ResepAutoimunComponent implements OnInit {
           console.log(error);
         }
       );
+
+    this.subscription.add(subs);
   }
 
   setDataResep() {
@@ -46,5 +48,10 @@ export class ResepAutoimunComponent implements OnInit {
     const arrayResep = this.responseData.array;
     this.detailResepSereh = arrayResep[0];
     this.detailResepJahe = arrayResep[1];
+  }
+
+  ngOnDestroy(): void {
+
+    this.subscription.unsubscribe();
   }
 }
