@@ -2,8 +2,7 @@ build site:
   image: node:latest
   stage: build
   script:
-    - npm ci
-    - npm i
+    - npm install
     - npm run build
   artifacts:
     expire_in: 4 week
