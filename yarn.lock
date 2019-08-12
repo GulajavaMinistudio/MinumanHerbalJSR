@@ -325,6 +325,11 @@
     semver "6.3.0"
     semver-intersect "1.4.0"
 
+"@swimlane/ngx-datatable@^15.0.2":
+  version "15.0.2"
+  resolved "https://registry.yarnpkg.com/@swimlane/ngx-datatable/-/ngx-datatable-15.0.2.tgz#3ab0a25668ebc20fe192a3014d41875e0f307181"
+  integrity sha512-IlUyCs/hLv12hzz2pGugbrdRpBbwE6JUM4Bm4CCqLptmZj+t8pw8Ywthde8yUDdpgGgTJeJ9G5o92QadyGbP3g==
+
 "@types/events@*":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
@@ -355,6 +360,11 @@
   integrity sha512-2ZOKrxb8bKRmP/po5ObYnRDgFE4i+lQiEB27bAMmtMWLgJSqlIDqlLx6S0IRorpOmOPRQ6O80NujTmQAtBkeNw==
   dependencies:
     "@types/jasmine" "*"
+
+"@types/js-cookie@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@types/js-cookie/-/js-cookie-2.2.2.tgz#84e8848e14d44418726ceb52dd887c7bfe45d678"
+  integrity sha512-vkuGzldF9mNsWS9cmmMFfW1rufa7IdPUorS150gKoU/2fzLJ/0LXiMMtRqIBWz0sZ/VF2VxwB25WXEOo6akU6w==
 
 "@types/minimatch@*":
   version "3.0.3"

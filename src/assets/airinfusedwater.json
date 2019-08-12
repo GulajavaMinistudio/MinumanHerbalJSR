@@ -1,0 +1,47 @@
+{
+  "arrayRow": [
+    {
+      "bahan1": "Apel",
+      "bahan2": "Kayu Manis",
+      "bahan3pelengkap": "Air Mineral"
+    },
+    {
+      "bahan1": "",
+      "bahan2": "",
+      "bahan3pelengkap": ""
+    },
+    {
+      "bahan1": "",
+      "bahan2": "",
+      "bahan3pelengkap": ""
+    },
+    {
+      "bahan1": "",
+      "bahan2": "",
+      "bahan3pelengkap": ""
+    },
+    {
+      "bahan1": "",
+      "bahan2": "",
+      "bahan3pelengkap": ""
+    }
+  ],
+  "arrayColumn": [
+    {
+      "prop": "Bahan 1"
+    },
+    {
+      "name": "Bahan 2"
+    },
+    {
+      "name": "Bahan 3 Pelengkap"
+    }
+  ],
+  "judul": "",
+  "keterangan": [
+    "Infused water adalah air putih yang ke dalamnya ditambahkan rasa dan aroma buah-buahan segar dengan cara perendaman dan pendiaman secara bersama-sama dalam waktu tertentu. Proses perendaman dan pendiaman yang dilakukan pada suhu rendah menghasilkan air yang lebih segar dibandingkan air putih biasa.",
+    "Air infus ini memberikan air dengan rasa tertentu dan karena ada  penyerapan vitamin dari buah dan sayuran ke dalam air. Selain mendapatkan kesegaran air putih dengan rasa buah, kita juga bisa mendapatkan manfaat dari khasiat buah-buahan yang digunakan.",
+    "Infused water bisa dibuat dari satu jenis atau beberapa jenis buah-buahan. Yang harus dilakukan pertama adalah mencuci buah-buahan hingga bersih lalu memotongnya dalam ukuran yang tidak terlalu kecil.",
+    "Selanjutnya potongan buah-buahan tersebut segera dimasukkan ke dalam gelas atau wadah kaca yang sebelumnya sudah diisi dengan air putih atau air mineral."
+  ]
+}

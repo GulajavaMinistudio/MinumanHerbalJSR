@@ -7,6 +7,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LibraryLoadersService } from './services/library-loaders.service';
+import { DataStorageService } from './services/data-storage.service';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { LibraryLoadersService } from './services/library-loaders.service';
   ],
   providers: [
     LibraryLoadersService,
+    DataStorageService,
     { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
