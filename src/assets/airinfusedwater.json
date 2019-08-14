@@ -2,18 +2,28 @@
   "arrayRow": [
     {
       "bahan1": "Apel",
-      "bahan2": "Kayu Manis",
-      "bahan3pelengkap": "Air Mineral"
+      "bahan2": "Kayu manis",
+      "bahan3pelengkap": "Air mineral"
     },
     {
-      "bahan1": "",
-      "bahan2": "",
-      "bahan3pelengkap": ""
+      "bahan1": "Kurma dengan jumlah 3, 5, atau 7 buah",
+      "bahan2": "Semangka",
+      "bahan3pelengkap": "Air mineral"
     },
     {
-      "bahan1": "",
-      "bahan2": "",
-      "bahan3pelengkap": ""
+      "bahan1": "Kiwi dan nanas manis",
+      "bahan2": "Timun dan Chia seed",
+      "bahan3pelengkap": "Air mineral"
+    },
+    {
+      "bahan1": "Teh hijau",
+      "bahan2": "Daun mint",
+      "bahan3pelengkap": "Jeruk nipis"
+    },
+    {
+      "bahan1": "Timun",
+      "bahan2": "Jeruk lemon",
+      "bahan3pelengkap": "Jeruk nipis"
     },
     {
       "bahan1": "",
