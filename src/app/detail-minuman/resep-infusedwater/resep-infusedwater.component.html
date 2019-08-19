@@ -1,0 +1,59 @@
+<body>
+  <div class="container container-padding">
+    <section class="articles">
+      <div class="column is-10 is-offset-1">
+        <!-- START ARTICLE -->
+        <div class="card article">
+          <div class="card-content">
+            <div class="media">
+              <div class="media-content has-text-centered">
+                <p class="title article-title">{{responseData.judul}}</p>
+                <div class="tags has-addons level-item">
+                  <span class="tag is-rounded is-info">@resep.jsr</span>
+                  <span class="tag is-rounded">Jurus Sehat Rasulullah</span>
+                </div>
+              </div>
+            </div>
+            <div class="content article-body">
+              <!-- JUDUL RESEP  -->
+              <h3 class="has-text-centered">
+
+              </h3>
+              <div>
+                <figure class="has-text-centered">
+                  <img src="./assets/images/sereh_wedang.png" alt="Gambar sereh" width="480" />
+                </figure>
+              </div>
+              <div class="content">
+                <h5 class="subtitle is-5"></h5>
+                <h5 class="subtitle is-5">Bahan Dasar</h5>
+                <ol type="a">
+                  <!-- <li *ngFor="let item of detailResepSereh.bahan">
+                    {{ item }}
+                  </li> -->
+                </ol>
+              </div>
+
+              <div>
+                <p *ngFor="let keterangan of arrayKeterangan">{{keterangan}}</p>
+              </div>
+
+              <ngx-datatable class="material" [rows]="arrayBaris" [columns]="arrayKolom" [rowHeight]="'auto'"
+                [columnMode]="'force'" [selectionType]="'single'"
+                (select)="onPilihDaftar($event)"></ngx-datatable>
+
+              <div class="is-divider"></div>
+
+              <div>
+                <figure class="has-text-centered">
+                  <img src="./assets/images/jerukperesjahe.png" width="480" alt="Gambar jeruk" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END ARTICLE -->
+      </div>
+    </section>
+  </div>
+</body>
