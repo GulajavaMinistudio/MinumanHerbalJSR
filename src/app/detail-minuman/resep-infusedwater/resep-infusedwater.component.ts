@@ -50,6 +50,10 @@ export class ResepInfusedwaterComponent implements OnInit, OnDestroy {
     this.arrayKolom = this.responseData.arrayColumn;
   }
 
+  onPilihDaftar(event) {
+    console.log(event);
+  }
+
   ngOnDestroy() {
     this.subscription.unsubscribe();
   }

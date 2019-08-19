@@ -17,7 +17,7 @@
             <div class="content article-body">
               <!-- JUDUL RESEP  -->
               <h3 class="has-text-centered">
-                {{ detailResepSereh.judulresep }}
+
               </h3>
               <div>
                 <figure class="has-text-centered">
@@ -28,40 +28,27 @@
                 <h5 class="subtitle is-5"></h5>
                 <h5 class="subtitle is-5">Bahan Dasar</h5>
                 <ol type="a">
-                  <li *ngFor="let item of detailResepSereh.bahan">
+                  <!-- <li *ngFor="let item of detailResepSereh.bahan">
                     {{ item }}
-                  </li>
+                  </li> -->
                 </ol>
               </div>
+
               <div>
                 <p *ngFor="let keterangan of arrayKeterangan">{{keterangan}}</p>
               </div>
 
-              <div class="is-divider"></div>
+              <ngx-datatable class="material" [rows]="arrayBaris" [columns]="arrayKolom" [rowHeight]="'auto'"
+                [columnMode]="'force'" [selectionType]="'single'"
+                (select)="onPilihDaftar($event)"></ngx-datatable>
 
-              <h3 class="has-text-centered">
-                {{ detailResepJahe.judulresep }}
-              </h3>
+              <div class="is-divider"></div>
 
               <div>
                 <figure class="has-text-centered">
                   <img src="./assets/images/jerukperesjahe.png" width="480" alt="Gambar jeruk" />
                 </figure>
               </div>
-
-              <div class="content">
-                <h5 class="subtitle is-5"></h5>
-                <h5 class="subtitle is-5">Bahan Dasar</h5>
-                <ol type="a">
-                  <li *ngFor="let item of detailResepJahe.bahan">
-                    {{ item }}
-                  </li>
-                </ol>
-              </div>
-              <h5 class="subtitle is-5">Cara Membuat</h5>
-              <p>{{ detailResepJahe.caramembuat }}</p>
-              <p>{{ detailResepJahe.keteranganlain }}</p>
-              <p></p>
             </div>
           </div>
         </div>
