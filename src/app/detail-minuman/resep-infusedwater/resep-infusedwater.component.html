@@ -38,7 +38,7 @@
                 <p *ngFor="let keterangan of arrayKeterangan">{{keterangan}}</p>
               </div>
 
-              <ngx-datatable class="material" [rows]="arrayBaris" [columns]="arrayKolom" [rowHeight]="'auto'"
+              <ngx-datatable class="table" [rows]="arrayBaris" [columns]="arrayKolom" [rowHeight]="'auto'"
                 [columnMode]="'force'" [selectionType]="'single'"
                 (select)="onPilihDaftar($event)"></ngx-datatable>
 

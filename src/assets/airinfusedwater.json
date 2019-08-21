@@ -38,13 +38,16 @@
   ],
   "arrayColumn": [
     {
-      "prop": "Bahan 1"
+      "name": "Bahan 1",
+      "prop": "bahan1"
     },
     {
-      "name": "Bahan 2"
+      "name": "Bahan 2",
+      "prop": "bahan2"
     },
     {
-      "name": "Bahan 3 Pelengkap"
+      "name": "Bahan 3 Pelengkap",
+      "prop": "bahan3pelengkap"
     }
   ],
   "judul": "Resep Infused Water",

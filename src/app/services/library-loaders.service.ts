@@ -27,6 +27,21 @@ export class LibraryLoadersService {
     ]);
   }
 
+  /**
+   * @description Memuat library datatable untuk halaman yang ada tabel nya
+   */
+  loadJSCSSLibraryDatatable() {
+    return forkJoin([
+      // load script js
+      this.loadStyle('bulma-datatables-css.css'),
+      this.loadStyle('bulma-divider-css.css'),
+      this.loadStyle('jquery-datatables-css.css'),
+      this.loadScript('jquery-js.js'),
+      this.loadScript('datatablesnet-js.js'),
+      this.loadScript('datatablesnet-styling-js.js'),
+      this.loadScript('datatables-bulma-js.js')
+    ]);
+  }
 
   /**
    * @description Muat data script dari URL tertentu secara lazy loading

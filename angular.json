@@ -41,9 +41,46 @@
                 "bundleName": "bulma-divider-css",
                 "inject": true,
                 "lazy": true
+              },
+              {
+                "input": "node_modules/datatables-bulma/css/dataTables.bulma.min.css",
+                "bundleName": "bulma-datatables-css",
+                "inject": true,
+                "lazy": true
+              },
+              {
+                "input": "node_modules/datatables.net-dt/css/jquery.dataTables.min.css",
+                "bundleName": "jquery-datatables-css",
+                "inject": true,
+                "lazy": true
               }
             ],
-            "scripts": []
+            "scripts": [
+              {
+                "input": "node_modules/jquery/dist/jquery.slim.min.js",
+                "bundleName": "jquery-js",
+                "inject": true,
+                "lazy": true
+              },
+              {
+                "input": "node_modules/datatables.net/js/jquery.dataTables.min.js",
+                "bundleName": "datatablesnet-js",
+                "inject": true,
+                "lazy": true
+              },
+              {
+                "input": "node_modules/datatables.net-dt/js/dataTables.dataTables.min.js",
+                "bundleName": "datatablesnet-styling-js",
+                "inject": true,
+                "lazy": true
+              },
+              {
+                "input": "node_modules/datatables-bulma/js/dataTables.bulma.min.js",
+                "bundleName": "datatables-bulma-js",
+                "inject": true,
+                "lazy": true
+              }
+            ]
           },
           "configurations": {
             "production": {

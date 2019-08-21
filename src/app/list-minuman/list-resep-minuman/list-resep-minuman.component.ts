@@ -45,7 +45,8 @@ export class ListResepMinumanComponent implements OnInit, OnDestroy {
     switch (index) {
 
       case 0:
-
+        // Resep Infused Water
+        this.router.navigate(['/detail-resep/resep-infused-water']);
         break;
 
       case 1:

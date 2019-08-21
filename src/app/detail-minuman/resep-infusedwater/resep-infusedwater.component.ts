@@ -17,6 +17,18 @@ export class ResepInfusedwaterComponent implements OnInit, OnDestroy {
   arrayKolom: [] = [];
   subscription: Subscription = new Subscription();
 
+  kolom = [
+    {
+      name: 'Bahan 1'
+    },
+    {
+      name: 'Bahan 2'
+    },
+    {
+      name: 'Bahan 3 Pelengkap'
+    }
+  ];
+
   constructor(private readonly dataLoader: DataLoadersService) { }
 
   ngOnInit() {
