@@ -73,3 +73,17 @@ div.column.is-8:first-child {
 .container-padding {
   margin-top: 10em;
 }
+
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  display: block;
+  font-family: "Font Awesome\ 5 Free";
+  opacity: 0.5
+}
+
+
+.pagination-list ul {
+  list-style: none !important;
+}

@@ -8,7 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LibraryLoadersService } from './services/library-loaders.service';
 import { DataStorageService } from './services/data-storage.service';
-import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 
 @NgModule({
@@ -19,8 +18,7 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule,
-    NgxDatatableModule
+    AppRoutingModule
   ],
   providers: [
     LibraryLoadersService,

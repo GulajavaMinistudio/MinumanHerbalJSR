@@ -4,6 +4,11 @@ import { DataLoadersService } from 'src/app/services/data-loaders.service';
 import { URL_DETAIL_INFUSEDWATER } from 'src/app/services/Konstans';
 import { map } from 'rxjs/operators';
 
+import { LibraryLoadersService } from 'src/app/services/library-loaders.service';
+
+declare var $: any;
+
+
 @Component({
   selector: 'app-resep-infusedwater',
   templateUrl: './resep-infusedwater.component.html',
@@ -13,27 +18,48 @@ export class ResepInfusedwaterComponent implements OnInit, OnDestroy {
 
   responseData: any = {};
   arrayKeterangan: [] = [];
-  arrayBaris: [] = [];
-  arrayKolom: [] = [];
+  arrayDataInfusedWater: [] = [];
   subscription: Subscription = new Subscription();
 
-  kolom = [
-    {
-      name: 'Bahan 1'
-    },
-    {
-      name: 'Bahan 2'
-    },
-    {
-      name: 'Bahan 3 Pelengkap'
-    }
+  tabelResep: any = {};
+
+  arrayKolom = [
+    { data: 'bahan1' },
+    { data: 'bahan2' },
+    { data: 'bahan3pelengkap' }
   ];
 
-  constructor(private readonly dataLoader: DataLoadersService) { }
+  constructor(private readonly dataLoader: DataLoadersService,
+              private readonly libraryLoader: LibraryLoadersService) { }
 
   ngOnInit() {
     this.subscription = new Subscription();
-    this.getDetailResep();
+    this.getLibraryHalaman();
+  }
+
+  inisialisasiTabel() {
+
+    this.tabelResep = ($('#tabel_resep_infused') as any).DataTable({
+      data: this.arrayDataInfusedWater,
+      columns: this.arrayKolom,
+      deferRender: true,
+      responsive: true,
+    });
+  }
+
+  getLibraryHalaman() {
+
+    const subs = this.libraryLoader.loadJSCSSLibraryDatatable()
+      .subscribe(() => {
+        console.log('library loaded');
+        this.inisialisasiTabel();
+        this.getDetailResep();
+      },
+        (error) => {
+          console.warn(error);
+        });
+
+    this.subscription.add(subs);
   }
 
   getDetailResep() {
@@ -58,12 +84,10 @@ export class ResepInfusedwaterComponent implements OnInit, OnDestroy {
   setDataResep() {
 
     this.arrayKeterangan = this.responseData.keterangan;
-    this.arrayBaris = this.responseData.arrayRow;
-    this.arrayKolom = this.responseData.arrayColumn;
-  }
+    this.arrayDataInfusedWater = this.responseData.arrayRow;
 
-  onPilihDaftar(event) {
-    console.log(event);
+    this.tabelResep.clear().draw();
+    this.tabelResep.rows.add(this.arrayDataInfusedWater).draw();
   }
 
   ngOnDestroy() {

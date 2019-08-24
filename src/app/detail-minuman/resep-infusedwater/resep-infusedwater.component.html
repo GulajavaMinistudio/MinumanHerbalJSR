@@ -38,17 +38,25 @@
                 <p *ngFor="let keterangan of arrayKeterangan">{{keterangan}}</p>
               </div>
 
-              <ngx-datatable class="table" [rows]="arrayBaris" [columns]="arrayKolom" [rowHeight]="'auto'"
-                [columnMode]="'force'" [selectionType]="'single'"
-                (select)="onPilihDaftar($event)"></ngx-datatable>
-
               <div class="is-divider"></div>
 
-              <div>
+              <table id="tabel_resep_infused" class="table is-striped is-hoverable list-next-button">
+                <thead>
+                  <tr>
+                    <th>Bahan 1</th>
+                    <th>Bahan 2</th>
+                    <th>Bahan Pelengkap</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+
+              <!-- <div>
                 <figure class="has-text-centered">
                   <img src="./assets/images/jerukperesjahe.png" width="480" alt="Gambar jeruk" />
                 </figure>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>

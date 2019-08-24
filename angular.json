@@ -53,11 +53,17 @@
                 "bundleName": "jquery-datatables-css",
                 "inject": true,
                 "lazy": true
+              },
+              {
+                "input": "node_modules/@fortawesome/fontawesome-free/css/fontawesome.css",
+                "bundleName": "fontawesome-css",
+                "inject": true,
+                "lazy": true
               }
             ],
             "scripts": [
               {
-                "input": "node_modules/jquery/dist/jquery.slim.min.js",
+                "input": "node_modules/jquery/dist/jquery.min.js",
                 "bundleName": "jquery-js",
                 "inject": true,
                 "lazy": true
