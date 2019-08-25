@@ -74,6 +74,10 @@ div.column.is-8:first-child {
   margin-top: 10em;
 }
 
+.padding-top-title {
+  margin-top: 1em;
+}
+
 table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after {
   position: absolute;
   bottom: 4px;
@@ -84,6 +88,6 @@ table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, 
 }
 
 
-.pagination-list ul {
+.pagination-list.content ul {
   list-style: none !important;
 }

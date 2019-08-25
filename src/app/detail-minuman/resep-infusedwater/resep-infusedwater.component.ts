@@ -44,6 +44,12 @@ export class ResepInfusedwaterComponent implements OnInit, OnDestroy {
       columns: this.arrayKolom,
       deferRender: true,
       responsive: true,
+      searching: false,
+      paging: false,
+      lengthChange: false,
+      info: false,
+      ordering: false,
+      processing: true,
     });
   }
 

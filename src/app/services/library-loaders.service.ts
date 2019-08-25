@@ -33,15 +33,11 @@ export class LibraryLoadersService {
   loadJSCSSLibraryDatatable() {
     return forkJoin([
       // load script js dan css
-      this.loadStyle('fontawesome-css.css'),
-      this.loadStyle('bulma-css.css'),
-      this.loadStyle('bulma-datatables-css.css'),
       this.loadStyle('bulma-divider-css.css'),
-      // this.loadStyle('jquery-datatables-css.css'),
+      this.loadStyle('jquery-datatables-css.css'),
       this.loadScript('jquery-js.js'),
       this.loadScript('datatablesnet-js.js'),
-      // this.loadScript('datatablesnet-styling-js.js'),
-      this.loadScript('datatables-bulma-js.js')
+      this.loadScript('datatablesnet-styling-js.js')
     ]);
   }
 

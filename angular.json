@@ -55,7 +55,7 @@
                 "lazy": true
               },
               {
-                "input": "node_modules/@fortawesome/fontawesome-free/css/fontawesome.css",
+                "input": "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
                 "bundleName": "fontawesome-css",
                 "inject": true,
                 "lazy": true
