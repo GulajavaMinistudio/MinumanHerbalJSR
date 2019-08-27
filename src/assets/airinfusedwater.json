@@ -36,20 +36,6 @@
       "bahan3pelengkap": "Kiwi"
     }
   ],
-  "arrayColumn": [
-    {
-      "name": "Bahan 1",
-      "prop": "bahan1"
-    },
-    {
-      "name": "Bahan 2",
-      "prop": "bahan2"
-    },
-    {
-      "name": "Bahan 3 Pelengkap",
-      "prop": "bahan3pelengkap"
-    }
-  ],
   "judul": "Resep Infused Water",
   "keterangan": [
     "Infused water adalah air putih yang ke dalamnya ditambahkan rasa dan aroma buah-buahan segar dengan cara perendaman dan pendiaman secara bersama-sama dalam waktu tertentu. Proses perendaman dan pendiaman yang dilakukan pada suhu rendah menghasilkan air yang lebih segar dibandingkan air putih biasa.",
@@ -57,5 +43,10 @@
     "Infused water bisa dibuat dari satu jenis atau beberapa jenis buah-buahan. Yang harus dilakukan pertama adalah mencuci buah-buahan hingga bersih lalu memotongnya dalam ukuran yang tidak terlalu kecil.",
     "Selanjutnya potongan buah-buahan tersebut segera dimasukkan ke dalam gelas atau wadah kaca yang sebelumnya sudah diisi dengan air putih atau air mineral.",
     "Mayoritas buah-buahan yang ada di Indonesia dapat dibuat sebagai bahan infused water. Buah yang disarankan yaitu buah yang memiliki tekstur daging buah padat dan tidak mudah hancur ketika direndam dengan air. Beberapa contoh buah-buahan dan kombinasinya dapat dilihat pada tabel di bawah ini."
+  ],
+  "judul_nano": "Air Nano",
+  "keterangan_nano": [
+    "Air nano memiliki cara pembuatan yang hampir sama dengan air infus. Yang membedakannya adalah air nano memerlukan bahan kurma dan bijinya dalam setiap rendamannya.",
+    "Air nano bisa dibuat dengan menggunakan air hangat dan bisa dengan air dingin. Air nano dapat disimpan di dalam lemari pendingin untuk diminum beberapa jam yang akan datang."
   ]
 }
