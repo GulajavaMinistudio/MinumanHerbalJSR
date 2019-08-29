@@ -48,5 +48,22 @@
   "keterangan_nano": [
     "Air nano memiliki cara pembuatan yang hampir sama dengan air infus. Yang membedakannya adalah air nano memerlukan bahan kurma dan bijinya dalam setiap rendamannya.",
     "Air nano bisa dibuat dengan menggunakan air hangat dan bisa dengan air dingin. Air nano dapat disimpan di dalam lemari pendingin untuk diminum beberapa jam yang akan datang."
+  ],
+  "arrayRowNano": [
+    {
+      "bahan1": "",
+      "bahan2": "Kayu manis",
+      "bahan3pelengkap": "Air mineral"
+    },
+    {
+      "bahan1": "",
+      "bahan2": "Kayu manis",
+      "bahan3pelengkap": "Air mineral"
+    },
+    {
+      "bahan1": "",
+      "bahan2": "Kayu manis",
+      "bahan3pelengkap": "Air mineral"
+    }
   ]
 }
