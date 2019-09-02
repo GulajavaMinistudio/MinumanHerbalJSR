@@ -34,6 +34,26 @@
       "bahan1": "Timun",
       "bahan2": "Strawberry",
       "bahan3pelengkap": "Kiwi"
+    },
+    {
+      "bahan1": "Jeruk",
+      "bahan2": "Jahe yang digeprek",
+      "bahan3pelengkap": "Daun mint"
+    },
+    {
+      "bahan1": "Jahe",
+      "bahan2": "Rosemary",
+      "bahan3pelengkap": "Kayu manis"
+    },
+    {
+      "bahan1": "Lemon dan daun mint",
+      "bahan2": "Cengkeh",
+      "bahan3pelengkap": "Chia seed"
+    },
+    {
+      "bahan1": "Kunyit",
+      "bahan2": "Jahe",
+      "bahan3pelengkap": "Sereh"
     }
   ],
   "judul": "Resep Infused Water",
@@ -51,18 +71,23 @@
   ],
   "arrayRowNano": [
     {
-      "bahan1": "",
-      "bahan2": "Kayu manis",
+      "bahan1": "Daging buah manggis dan bijinya, dan potongan semangka.",
+      "bahan2": "Nanas manis, dan kurma dalam jumlah ganjil beserta bijinya",
       "bahan3pelengkap": "Air mineral"
     },
     {
-      "bahan1": "",
-      "bahan2": "Kayu manis",
+      "bahan1": "Daging buah manggis dan bijinya",
+      "bahan2": "Kurma dalam jumlah ganjil beserta bijinya",
       "bahan3pelengkap": "Air mineral"
     },
     {
-      "bahan1": "",
-      "bahan2": "Kayu manis",
+      "bahan1": "Daging buah duku dan bijinya",
+      "bahan2": "Kurma dalam jumlah ganjil beserta bijinya",
+      "bahan3pelengkap": "Air mineral"
+    },
+    {
+      "bahan1": "Potongan daging buah anggur dan bijinya",
+      "bahan2": "Kurma dalam jumlah ganjil beserta bijinya",
       "bahan3pelengkap": "Air mineral"
     }
   ]

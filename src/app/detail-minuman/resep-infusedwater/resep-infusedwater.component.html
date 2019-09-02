@@ -43,6 +43,32 @@
 
               <div class="is-divider"></div>
 
+              <h3 class="has-text-centered">
+                {{judulAirNano}}
+              </h3>
+
+              <div>
+                <p *ngFor="let airNanoItem of arrayBarisAirNano">
+                  {{airNanoItem}}
+                </p>
+              </div>
+
+              <table id="tabel_resep_air-nano" class="table is-striped is-hoverable">
+                <thead>
+                  <tr>
+                    <th>Bahan 1</th>
+                    <th>Bahan 2</th>
+                    <th>Bahan Pelengkap</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of arrayBarisAirNano">
+                    <td>{{item.bahan1}}</td>
+                    <td>{{item.bahan2}}</td>
+                    <td>{{item.bahan3pelengkap }}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

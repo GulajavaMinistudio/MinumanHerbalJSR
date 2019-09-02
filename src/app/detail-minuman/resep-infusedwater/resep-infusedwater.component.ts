@@ -29,6 +29,9 @@ export class ResepInfusedwaterComponent implements OnInit, OnDestroy {
     { data: 'bahan3pelengkap' }
   ];
 
+  judulAirNano = '';
+  arrayBarisAirNano = [];
+
   constructor(private readonly dataLoader: DataLoadersService,
               private readonly libraryLoader: LibraryLoadersService) { }
 
