@@ -31,6 +31,7 @@ export class ResepInfusedwaterComponent implements OnInit, OnDestroy {
 
   judulAirNano = '';
   arrayBarisAirNano = [];
+  arrayBarisKeteranganAirNano = [];
 
   constructor(private readonly dataLoader: DataLoadersService,
               private readonly libraryLoader: LibraryLoadersService) { }
@@ -97,6 +98,10 @@ export class ResepInfusedwaterComponent implements OnInit, OnDestroy {
 
     this.tabelResep.clear().draw();
     this.tabelResep.rows.add(this.arrayDataInfusedWater).draw();
+
+    this.judulAirNano = this.responseData.judul_nano;
+    this.arrayBarisKeteranganAirNano = this.responseData.keterangan_nano;
+    this.arrayBarisAirNano = this.responseData.arrayRowNano;
   }
 
   ngOnDestroy() {
