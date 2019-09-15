@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class ListResepMinumanComponent implements OnInit, OnDestroy {
 
   listDaftarResep: string[] = [];
-  subscribption: Subscription = new Subscription();
+  subscription: Subscription = new Subscription();
 
   constructor(
     private readonly https: DataLoadersService,
@@ -20,10 +20,9 @@ export class ListResepMinumanComponent implements OnInit, OnDestroy {
   ) { }
 
   ngOnInit() {
-    this.subscribption = new Subscription();
+    this.subscription = new Subscription();
     this.getDaftarResep();
   }
-
 
   getDaftarResep() {
 
@@ -37,7 +36,7 @@ export class ListResepMinumanComponent implements OnInit, OnDestroy {
         }
       );
 
-    this.subscribption.add(subs);
+    this.subscription.add(subs);
   }
 
   onClickResepMakanan(index: number, item: string) {
@@ -101,6 +100,9 @@ export class ListResepMinumanComponent implements OnInit, OnDestroy {
         break;
       case 17:
 
+        // RESEP UNTUK KEKEBALAN TUBUH
+        this.router.navigate(['/detail-resep/resep-auto-imun', { nama: item }],
+          { replaceUrl: false });
         break;
       case 18:
 
@@ -108,26 +110,11 @@ export class ListResepMinumanComponent implements OnInit, OnDestroy {
       case 19:
 
         break;
-      case 20:
-
-        // RESEP UNTUK KEKEBALAN TUBUH
-        this.router.navigate(['/detail-resep/resep-auto-imun', { nama: item }],
-          { replaceUrl: false });
-        break;
-      case 21:
-
-        break;
-      case 22:
-
-        break;
-      case 23:
-
-        break;
     }
   }
 
   ngOnDestroy(): void {
 
-    this.subscribption.unsubscribe();
+    this.subscription.unsubscribe();
   }
 }
