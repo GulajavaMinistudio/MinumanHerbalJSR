@@ -20,7 +20,7 @@ const routes: Routes = [
     path: '**',
     redirectTo: '/daftar-resep',
     pathMatch: 'full'
-  }
+  },
 ];
 
 @NgModule({

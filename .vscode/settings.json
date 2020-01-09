@@ -8,11 +8,11 @@
     "**/__pycache__": true,
     "**/.pytest_cache": true,
     "**/node_modules": false,
-    "node_modules": false,
+    "node_modules": true,
     "venv": true,
     "*.sublime-*": true,
     "env*": true,
-    "dist": false,
+    "dist": true,
     "**/.svn": true,
     "**/.hg": true,
     "**/CVS": true
@@ -22,7 +22,9 @@
     "**/bower_components": true,
     "**/env": true,
     "**/venv": true,
-    "**/dist": true
+    "**/dist": true,
+    "**/scss": true,
+    "**/.idea": true,
   },
   "files.watcherExclude": {
     "**/.git/objects/**": true,
@@ -31,6 +33,14 @@
     "**/env/**": true,
     "**/venv/**": true,
     "env-*": true,
-    "**/dist/**": true
-  }
+    "**/dist/**": true,
+    "**/scss/**": true,
+    "**/.idea/": true,
+  },
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#f8ca57",
+    "terminalCursor.foreground": "#f8ca57"
+  },
+  "oneDarkPro.bold": true,
+  "oneDarkPro.editorTheme": "ayu",
 }
